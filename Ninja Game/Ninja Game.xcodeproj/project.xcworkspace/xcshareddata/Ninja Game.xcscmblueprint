@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E05CA5E9D7F541C00242EE225CF53AF721147C55",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E05CA5E9D7F541C00242EE225CF53AF721147C55" : 9223372036854775807,
+    "4C9456B4622CC201E2A71D1994B760EBF9E69574" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9E6FE918-C7E0-4AF3-9341-D7A7712653D7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E05CA5E9D7F541C00242EE225CF53AF721147C55" : "NinjaGame\/",
+    "4C9456B4622CC201E2A71D1994B760EBF9E69574" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Ninja Game",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Ninja Game\/Ninja Game.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Panderson14\/PHYS2660.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C9456B4622CC201E2A71D1994B760EBF9E69574"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Panderson14\/NinjaGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E05CA5E9D7F541C00242EE225CF53AF721147C55"
+    }
+  ]
+}
