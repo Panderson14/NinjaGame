@@ -54,12 +54,13 @@ extension CGPoint {
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     // 1
-    let player = SKSpriteNode(imageNamed: "player")
+    let player = SKSpriteNode(imageNamed: "Red")
     var monstersDestroyed = 0
     
     override func didMove(to view: SKView) {
         // 2
-        backgroundColor = SKColor.white
+        backgroundColor = SKColor.green
+        //self.view?.backgroundColor = UIColor(patternImage: UIImage(named: "Grass")!)
         // 3
         player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
         // 4
@@ -75,7 +76,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 ])
         ))
         
-        let backgroundMusic = SKAudioNode(fileNamed: "background-music-aac.caf")
+        let backgroundMusic = SKAudioNode(fileNamed: "Pokemon SilverGoldCrystal - Route 46.mp3")
         backgroundMusic.autoplayLooped = true
         addChild(backgroundMusic)
     }
@@ -90,8 +91,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func addMonster() {
         
+        let pokedex = Int(arc4random_uniform(151) + 1)
+        var imageTitle = ""
+        if pokedex < 10 {imageTitle = "00\(pokedex).gif"}
+        else if pokedex >= 100 {imageTitle = "\(pokedex).gif"}
+        else {imageTitle = "0\(pokedex).gif"}
+        
         // Create sprite
-        let monster = SKSpriteNode(imageNamed: "monster")
+        let monster = SKSpriteNode(imageNamed: imageTitle)
         
         // Determine where to spawn the monster along the Y axis
         let actualY = random(min: monster.size.height/2, max: size.height - monster.size.height/2)
@@ -127,7 +134,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         
-        run(SKAction.playSoundFileNamed("pew-pew-lei.caf", waitForCompletion: false))
+        run(SKAction.playSoundFileNamed("Pitch.mp3", waitForCompletion: false))
         
         // 1 - Choose one of the touches to work with
         guard let touch = touches.first else {
@@ -136,7 +143,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let touchLocation = touch.location(in: self)
         
         // 2 - Set up initial location of projectile
-        let projectile = SKSpriteNode(imageNamed: "projectile")
+        let projectile = SKSpriteNode(imageNamed: "pokeball.png")
         projectile.position = player.position
         
         projectile.physicsBody = SKPhysicsBody(circleOfRadius: projectile.size.width/2)
