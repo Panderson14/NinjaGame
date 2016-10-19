@@ -57,9 +57,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let player = SKSpriteNode(imageNamed: "Red")
     var monstersDestroyed = 0
     
+    var scoreLabel = SKLabelNode()
+    let scoreLabelName = "scoreLabel"
+    
     override func didMove(to view: SKView) {
+        
+        scoreLabel = SKLabelNode(fontNamed: "ScoreLabel")
+        scoreLabel.name = scoreLabelName
+        scoreLabel.fontSize = 125
+        scoreLabel.fontColor = SKColor.black
+        scoreLabel.text = "\(monstersDestroyed)"
+        scoreLabel.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 14)
+        self.addChild(scoreLabel)
+        
+        
         // 2
-        backgroundColor = SKColor.green
+        backgroundColor = SKColor.white
         //self.view?.backgroundColor = UIColor(patternImage: UIImage(named: "Grass")!)
         // 3
         player.position = CGPoint(x: size.width * 0.1, y: size.height * 0.5)
@@ -91,7 +104,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func addMonster() {
         
-        let pokedex = Int(arc4random_uniform(151) + 1)
+        let pokedex = Int(arc4random_uniform(647) + 1)
         var imageTitle = ""
         if pokedex < 10 {imageTitle = "00\(pokedex).gif"}
         else if pokedex >= 100 {imageTitle = "\(pokedex).gif"}
@@ -184,11 +197,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         projectile.removeFromParent()
         monster.removeFromParent()
         monstersDestroyed += 1
-        if (monstersDestroyed > 30) {
-            let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
-            let gameOverScene = GameOverScene(size: self.size, won: true)
-            self.view?.presentScene(gameOverScene, transition: reveal)
-        }
+        scoreLabel.text = "\(monstersDestroyed)"
+//        if (monstersDestroyed > 30) {
+//            let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+//            let gameOverScene = GameOverScene(size: self.size, won: true)
+//            self.view?.presentScene(gameOverScene, transition: reveal)
+//        }
     }
     
     
