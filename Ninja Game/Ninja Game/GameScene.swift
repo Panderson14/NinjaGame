@@ -137,7 +137,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let actionMoveDone = SKAction.removeFromParent()
         let loseAction = SKAction.run() {
             let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
-            let gameOverScene = GameOverScene(size: self.size, won: false)
+            let gameOverScene = GameOverScene(size: self.size, finalCount: self.monstersDestroyed)
             self.view?.presentScene(gameOverScene, transition: reveal)
         }
         monster.run(SKAction.sequence([actionMove, loseAction, actionMoveDone]))
