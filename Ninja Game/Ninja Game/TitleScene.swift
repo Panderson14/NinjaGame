@@ -21,23 +21,25 @@ class TitleScene: SKScene {
     
     
     var button: SKNode!
+    //var action: () -> Void
+    
     
     init(size: CGSize, highScore:Int) {
         
         super.init(size: size)
         
-        print("Im in the Title Scene!")
-        
         // 1
         backgroundColor = SKColor.white
         
+        //let button: GGButton = GGButton(defaultButtonImage: "001.gif", activeButtonImage: "002.gif", buttonAction: goToGameScene)
+        
         button = SKSpriteNode(color: SKColor.red, size: CGSize(width: 100, height: 44))
-        button.position = CGPoint(x: size.width / 4, y: size.height / 4)
+        button.position = CGPoint(x: size.width / 2, y: size.height / 4)
         addChild(button)
         
         // 3
         let label = SKLabelNode(fontNamed: "Chalkduster")
-        label.text = "You caught \(highScore) Pokémon!"
+        label.text = "High Score: \(highScore)"
         label.fontSize = 40
         label.fontColor = SKColor.black
         label.position = CGPoint(x: size.width/2, y: size.height/2)
@@ -50,5 +52,11 @@ class TitleScene: SKScene {
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+    func goToGameScene() {
+        print("HI!!!")
+    }
+
 
 }

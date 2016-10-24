@@ -696,6 +696,7 @@
 		CD9A33AB1DB463D000ECFA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9A33AA1DB463D000ECFA83 /* Assets.xcassets */; };
 		CD9A33AE1DB463D000ECFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A33AC1DB463D000ECFA83 /* LaunchScreen.storyboard */; };
 		CD9A33BD1DB46AEB00ECFA83 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A33BC1DB46AEB00ECFA83 /* GameOverScene.swift */; };
+		CDEC7BF71DBDA0DC00B19784 /* SKSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEC7BF61DBDA0DC00B19784 /* SKSimpleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1390,6 +1391,7 @@
 		CD9A33AD1DB463D000ECFA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD9A33AF1DB463D000ECFA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD9A33BC1DB46AEB00ECFA83 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		CDEC7BF61DBDA0DC00B19784 /* SKSimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKSimpleButton.swift; path = Sounds/SKSimpleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2116,6 +2118,7 @@
 				CD9A33BC1DB46AEB00ECFA83 /* GameOverScene.swift */,
 				CD3E5CB01DBAFC2C007502FB /* TitleScene.swift */,
 				CD9A33A51DB463D000ECFA83 /* GameViewController.swift */,
+				CDEC7BF61DBDA0DC00B19784 /* SKSimpleButton.swift */,
 				CD9A33A71DB463D000ECFA83 /* Main.storyboard */,
 				CD9A33AA1DB463D000ECFA83 /* Assets.xcassets */,
 				CD9A33AC1DB463D000ECFA83 /* LaunchScreen.storyboard */,
@@ -2887,6 +2890,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEC7BF71DBDA0DC00B19784 /* SKSimpleButton.swift in Sources */,
 				CD9A33A41DB463D000ECFA83 /* GameScene.swift in Sources */,
 				CD9A33A61DB463D000ECFA83 /* GameViewController.swift in Sources */,
 				CD9A33BD1DB46AEB00ECFA83 /* GameOverScene.swift in Sources */,
