@@ -689,6 +689,7 @@
 		CD4764E51DB5B23600B2768F /* pokeball.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4764E41DB5B23600B2768F /* pokeball.png */; };
 		CD4764EB1DB5B49800B2768F /* Pitch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD4764EA1DB5B49800B2768F /* Pitch.mp3 */; };
 		CD4764ED1DB5B54E00B2768F /* Grass_comparison.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4764EC1DB5B54E00B2768F /* Grass_comparison.png */; };
+		CD6FEAEA1DC043F90016904B /* GGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6FEAE91DC043F90016904B /* GGButton.swift */; };
 		CD9A339E1DB463D000ECFA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A339D1DB463D000ECFA83 /* AppDelegate.swift */; };
 		CD9A33A41DB463D000ECFA83 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A33A31DB463D000ECFA83 /* GameScene.swift */; };
 		CD9A33A61DB463D000ECFA83 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A33A51DB463D000ECFA83 /* GameViewController.swift */; };
@@ -696,7 +697,6 @@
 		CD9A33AB1DB463D000ECFA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9A33AA1DB463D000ECFA83 /* Assets.xcassets */; };
 		CD9A33AE1DB463D000ECFA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9A33AC1DB463D000ECFA83 /* LaunchScreen.storyboard */; };
 		CD9A33BD1DB46AEB00ECFA83 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A33BC1DB46AEB00ECFA83 /* GameOverScene.swift */; };
-		CDEC7BF71DBDA0DC00B19784 /* SKSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEC7BF61DBDA0DC00B19784 /* SKSimpleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1382,6 +1382,7 @@
 		CD4764E41DB5B23600B2768F /* pokeball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pokeball.png; path = Sounds/pokeball.png; sourceTree = "<group>"; };
 		CD4764EA1DB5B49800B2768F /* Pitch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pitch.mp3; sourceTree = "<group>"; };
 		CD4764EC1DB5B54E00B2768F /* Grass_comparison.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grass_comparison.png; sourceTree = "<group>"; };
+		CD6FEAE91DC043F90016904B /* GGButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGButton.swift; sourceTree = "<group>"; };
 		CD9A339A1DB463D000ECFA83 /* Ninja Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ninja Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9A339D1DB463D000ECFA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD9A33A31DB463D000ECFA83 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -1391,7 +1392,6 @@
 		CD9A33AD1DB463D000ECFA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD9A33AF1DB463D000ECFA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD9A33BC1DB46AEB00ECFA83 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
-		CDEC7BF61DBDA0DC00B19784 /* SKSimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKSimpleButton.swift; path = Sounds/SKSimpleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2118,7 +2118,7 @@
 				CD9A33BC1DB46AEB00ECFA83 /* GameOverScene.swift */,
 				CD3E5CB01DBAFC2C007502FB /* TitleScene.swift */,
 				CD9A33A51DB463D000ECFA83 /* GameViewController.swift */,
-				CDEC7BF61DBDA0DC00B19784 /* SKSimpleButton.swift */,
+				CD6FEAE91DC043F90016904B /* GGButton.swift */,
 				CD9A33A71DB463D000ECFA83 /* Main.storyboard */,
 				CD9A33AA1DB463D000ECFA83 /* Assets.xcassets */,
 				CD9A33AC1DB463D000ECFA83 /* LaunchScreen.storyboard */,
@@ -2890,9 +2890,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDEC7BF71DBDA0DC00B19784 /* SKSimpleButton.swift in Sources */,
 				CD9A33A41DB463D000ECFA83 /* GameScene.swift in Sources */,
 				CD9A33A61DB463D000ECFA83 /* GameViewController.swift in Sources */,
+				CD6FEAEA1DC043F90016904B /* GGButton.swift in Sources */,
 				CD9A33BD1DB46AEB00ECFA83 /* GameOverScene.swift in Sources */,
 				CD9A339E1DB463D000ECFA83 /* AppDelegate.swift in Sources */,
 				CD3E5CB11DBAFC2C007502FB /* TitleScene.swift in Sources */,

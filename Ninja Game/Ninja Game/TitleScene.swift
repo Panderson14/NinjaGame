@@ -31,9 +31,7 @@ class TitleScene: SKScene {
         // 1
         backgroundColor = SKColor.white
         
-        //let button: GGButton = GGButton(defaultButtonImage: "001.gif", activeButtonImage: "002.gif", buttonAction: goToGameScene)
-        
-        button = SKSpriteNode(color: SKColor.red, size: CGSize(width: 100, height: 44))
+        let button: GGButton = GGButton(defaultButtonImage: "001.gif", activeButtonImage: "002.gif", buttonAction: goToGameScene)
         button.position = CGPoint(x: size.width / 2, y: size.height / 4)
         addChild(button)
         
